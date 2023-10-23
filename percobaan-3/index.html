@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Area (1)</title>
+
+    <script language="javascript" type="text/javascript">
+      function getArea(r) {
+        return Math.PI * r * r;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Percobaan 3: Menghitung Luas Lingkaran</h1>
+
+    <h1>Circle Area (1)</h1>
+
+    <form>
+      Enter radius, then press tab key or click on "area" box.<br />
+      radius (cm):
+      <input
+        type="text"
+        name="radius"
+        size="6"
+        maxlength="7"
+        value="-99"
+        onblur="area.value=getArea(parseFloat(radius.value));"
+      />
+      area (cm<sup>2</sup>):
+      <input type="text" name="area" size="6" maxlength="7" value="-99" />
+    </form>
+  </body>
+</html>
